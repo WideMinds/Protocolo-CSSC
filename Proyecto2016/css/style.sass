@@ -169,7 +169,7 @@ footer
   		margin-top: -15px
   		margin-left:9px
 nav
-	background: #F4511E
+	background: #880E4F
 	display: flex
 	flex-direction: column
 	position: fixed
@@ -177,9 +177,9 @@ nav
 	top: 0
 	height: 100%
 nav.admin
-	background: #4CAF50
+	background: #1B5E20
 	a
-		border-bottom: 2px solid #66BB6A
+		border-bottom: 2px solid #2E7D32
 nav
 	a,img		
 		height: 5em
@@ -188,7 +188,7 @@ nav
 		// text-align:center
 		color: #72739f
 		position: relative
-		border-bottom: 2px solid #FF5722
+		border-bottom: 2px solid #AD1457
 		transition: background 0.1s ease-in-out
 		&:hover
 			background: #267fdd
@@ -202,7 +202,7 @@ nav
 	display: flex	
 	justify-content: center
 	align-items: center
-	background: #795548
+	background: #673AB7
 	color: #FFF
 	position: absolute
 	width: 100%
@@ -213,7 +213,7 @@ nav
     z-index:-10
     overflow:hidden
 .cal.admin
-	background: #FBC02D
+	background: #4CAF50
 #menui
 	height:73px
 	width: 75px
@@ -224,7 +224,7 @@ nav
 .formulario
 	display: flex
 	flex-direction: column
-	background: #E64A19
+	background: #AD1457
 	width:30%
 	align-items: center
 	height: 80%
@@ -233,16 +233,17 @@ nav
 		padding: 5px
 	input[type="text"],
 	input[type="password"],
+	input[type="time"],
 	select
 		border: none
 		color: #FFF
 		border-bottom: 2px solid #FFF
 		padding: 5px
-		background: #E64A19
+		background: #AD1457
 		width: 250px
 		&:focus
 			outline: none
-			background: #E64A19
+			background: #AD1457
 	.group.form
 		padding: 10px
 		display: flex
@@ -251,22 +252,17 @@ nav
 		width: 200px
 		cursor: pointer
 		color: #FFF
-		background: #F9A825
+		background:#880E4F
 		border: none
 		height: 30px
-.hora
+.material-icons.hora
+	position: absolute
+	top: 0
+	height: 100%
+.formulario.ase.del
+	height: 150px
 	display: flex
-	padding-top: 10px
-	flex-direction: row
-	.material-icons.hora
-		padding-right: 10px	
-	input[type="text"]
-		width:81px
-	.incio,.final
-		left: 0
-		display: flex
-		flex-direction: row
-		width: 125px
+	justify-content: center
 #index
 	::-webkit-input-placeholder 
 		color: #3E2723 
@@ -288,7 +284,22 @@ nav
 		font-size: 15px
 		text-align: center
 		margin-bottom: 5px
-
+.formulario.ase
+	background: #00695C
+	input[type="text"],
+	input[type="password"],
+	select
+		border: none
+		color: #FFF
+		border-bottom: 2px solid #FFF
+		padding: 5px
+		background: #00695C
+		width: 250px
+		&:focus
+			outline: none
+			background: #00695C
+	input[type="submit"].ase
+		background: #00897B
 ::-webkit-input-placeholder 
 	color: #FFF 
 	font-size: 15px

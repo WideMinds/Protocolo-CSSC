@@ -68,13 +68,14 @@
                 <label>Hora inicio/Hora final:</label>
                 <div class="hora">
                     <div class="inicio">
-                        <i class="material-icons hora">alarm</i>
-                        <input type="text" placeholder="9:00AM">
+                        <!-- <i class="material-icons hora">alarm</i> -->
+                        <input type="time" placeholder="9:00AM" style="padding-bottom: 10px">
                     </div>
-                    <div class="final" style="padding-top: 7px; padding-left: 10px;">
-                        <i class="material-icons hora">alarm</i>
-                        <input type="text" placeholder="11:00AM">
-                    </div>
+                    <div class="final">
+                        <!-- <i class="material-icons hora">alarm</i> -->
+                        <input type="time" placeholder="11:00AM" style="margin-top: 13px">
+                    </div>                    
+                        <label>*Utilice formato de 24 horas</label>
                 </div>
             </div>
             <div class="group form">

@@ -1,15 +1,10 @@
-<?php
-    session_start();
-    if ($_SESSION['tipoUsu'] != "administrador") {
-        header("location:../index.php");
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Página principal</title>
 	<link rel="stylesheet" href="../css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
@@ -39,8 +34,19 @@
         </div></a>        
       </nav>    
     <div class="cal admin">
-      <h2>Aquí irá el calendario</h2>
+        <form action="" method="post" class="formulario ase del">
+            <div class="group form">
+                <label style="padding: 0">Carné</label>
+                <input type="text"  name="cod" style="padding: 5px">
+            </div>            
+            <div class="group form">
+                <input type="submit" name="add" value="Eliminar" class="ase">
+            </div>
+    <?php 
+        include("eliminarase.php");
+     ?>
+        </form>   
     </div>
-</div>  
+</div>
 </body>
 </html>
